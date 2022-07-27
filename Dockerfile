@@ -9,11 +9,11 @@ FROM debian:latest
 
 MAINTAINER hihouhou < hihouhou@hihouhou.com >
 
-ENV MINECRAFT_VERSION 18.30.04
+ENV MINECRAFT_VERSION 19.11.01
 
 # Update & install packages for installing minecraft
 RUN apt-get update && \
-    apt-get install -y apt-transport-https software-properties-common gnupg wget unzip
+    apt-get install -y apt-transport-https software-properties-common gnupg wget unzip libcurl4
 
 # Install openjdk
 RUN wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | apt-key add - && \
