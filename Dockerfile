@@ -9,7 +9,7 @@ FROM debian:latest
 
 MAINTAINER hihouhou < hihouhou@hihouhou.com >
 
-ENV MINECRAFT_VERSION 19.11.01
+ENV MINECRAFT_VERSION 19.21.01
 
 # Update & install packages for installing minecraft
 RUN apt-get update && \
